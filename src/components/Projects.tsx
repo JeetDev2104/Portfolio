@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
       title: "Solar Simulation",
       description:
         "Interactive 3D solar system simulation with realistic physics and educational content.",
-      image: "/src/assets/Solar.png",
+      image: "/assets/Solar.png",
       technologies: ["Three.js", "HTML", "JavaScript", "CSS3"],
       github: "https://github.com/JeetDev2104/Solar-System",
       demo: "https://www.linkedin.com/feed/update/urn:li:activity:7236423879638822915/",
