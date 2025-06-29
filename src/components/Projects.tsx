@@ -1,7 +1,15 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
-import { Github, ExternalLink, Star, GitFork, Zap, Code, Palette } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import {
+  Github,
+  ExternalLink,
+  Star,
+  GitFork,
+  Zap,
+  Code,
+  Palette,
+} from "lucide-react";
 
 const Projects: React.FC = () => {
   const [ref, inView] = useInView({
@@ -11,51 +19,68 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
-      title: 'StayEase',
-      description: 'A comprehensive hotel booking platform with real-time availability, secure payments, and user-friendly interface.',
-      image: 'https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express.js', 'RestFul API','Passport.js','EJS Template','Cloudinary','Joi'],
-      github: 'https://github.com/JeetDev2104/Airbnb',
-      demo: 'https://lnkd.in/dRHDz5KT',
+      title: "StayEase",
+      description:
+        "A comprehensive hotel booking platform with real-time availability, secure payments, and user-friendly interface.",
+      image:
+        "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: [
+        "React",
+        "Node.js",
+        "MongoDB",
+        "Express.js",
+        "RestFul API",
+        "Passport.js",
+        "EJS Template",
+        "Cloudinary",
+        "Joi",
+      ],
+      github: "https://github.com/JeetDev2104/Airbnb",
+      demo: "https://lnkd.in/dRHDz5KT",
       stars: 24,
       forks: 8,
-      gradient: 'from-blue-500 to-cyan-500',
+      gradient: "from-blue-500 to-cyan-500",
       icon: Code,
     },
     {
-      title: 'NewsFinanceLetter',
-      description: 'Built a real-time finance news app that scrapes live data directly from trusted financial websites, avoiding reliance on the Google News API.Integrated a custom-trained NLP chatbot.Users can interact naturally with the chatbot to get instant, relevant financial insights from real-time news sources',
-      image: 'https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Python', 'TensorFlow', 'Flask', 'Chart.js'],
-      github: 'https://github.com/JeetDev2104/34Paradox',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7322362337674387458/',
+      title: "NewsFinanceLetter",
+      description:
+        "Built a real-time finance news app that scrapes live data directly from trusted financial websites, avoiding reliance on the Google News API.Integrated a custom-trained NLP chatbot.Users can interact naturally with the chatbot to get instant, relevant financial insights from real-time news sources",
+      image:
+        "https://images.pexels.com/photos/187041/pexels-photo-187041.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Python", "TensorFlow", "Flask", "Chart.js"],
+      github: "https://github.com/JeetDev2104/34Paradox",
+      demo: "https://www.linkedin.com/feed/update/urn:li:activity:7322362337674387458/",
       stars: 18,
       forks: 5,
-      gradient: 'from-green-500 to-emerald-500',
+      gradient: "from-green-500 to-emerald-500",
       icon: Zap,
     },
     {
-      title: 'Solar Simulation',
-      description: 'Interactive 3D solar system simulation with realistic physics and educational content.',
-      image: 'https://lh3.google.com/u/0/d/1ZVTdOUbPhjGv1a5OB0rzDA6Gqw6Dh3Bx=w2836-h1416-iv1?auditContext=forDisplay',
-      technologies: ['Three.js', 'HTML', 'JavaScript', 'CSS3'],
-      github: 'https://github.com/JeetDev2104/Solar-System',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7236423879638822915/',
+      title: "Solar Simulation",
+      description:
+        "Interactive 3D solar system simulation with realistic physics and educational content.",
+      image: "/src/assets/Solar.png",
+      technologies: ["Three.js", "HTML", "JavaScript", "CSS3"],
+      github: "https://github.com/JeetDev2104/Solar-System",
+      demo: "https://www.linkedin.com/feed/update/urn:li:activity:7236423879638822915/",
       stars: 32,
       forks: 12,
-      gradient: 'from-purple-500 to-pink-500',
+      gradient: "from-purple-500 to-pink-500",
       icon: Palette,
     },
     {
-      title: 'AI Chatbot',
-      description: 'Intelligent conversational AI with natural language processing and context awareness.',
-      image: 'https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['Python', 'NLP', 'OpenAI API', 'React'],
-      github: '#',
-      demo: '#',
+      title: "AI Chatbot",
+      description:
+        "Intelligent conversational AI with natural language processing and context awareness.",
+      image:
+        "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800",
+      technologies: ["Python", "NLP", "OpenAI API", "React"],
+      github: "#",
+      demo: "#",
       stars: 45,
       forks: 15,
-      gradient: 'from-orange-500 to-red-500',
+      gradient: "from-orange-500 to-red-500",
       icon: Code,
     },
   ];
@@ -86,7 +111,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-500/5 to-transparent"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
           ref={ref}
@@ -100,7 +125,7 @@ const Projects: React.FC = () => {
             className="text-4xl md:text-5xl font-bold mb-6"
             whileHover={{ scale: 1.05 }}
           >
-            Featured{' '}
+            Featured{" "}
             <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
               Projects
             </span>
@@ -110,7 +135,8 @@ const Projects: React.FC = () => {
             className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
             whileHover={{ scale: 1.02 }}
           >
-            A showcase of my recent work, featuring innovative solutions and cutting-edge technologies
+            A showcase of my recent work, featuring innovative solutions and
+            cutting-edge technologies
           </motion.p>
         </motion.div>
 
@@ -140,7 +166,7 @@ const Projects: React.FC = () => {
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  
+
                   {/* Floating Icon */}
                   <motion.div
                     className={`absolute top-4 left-4 w-12 h-12 bg-gradient-to-r ${project.gradient} rounded-xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500`}
@@ -152,7 +178,7 @@ const Projects: React.FC = () => {
                   >
                     <project.icon className="w-6 h-6 text-white" />
                   </motion.div>
-                  
+
                   {/* Overlay buttons */}
                   <div className="absolute top-4 right-4 flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                     <motion.a
@@ -184,14 +210,14 @@ const Projects: React.FC = () => {
                       {project.title}
                     </motion.h3>
                     <div className="flex items-center gap-3 text-sm text-gray-400">
-                      <motion.div 
+                      <motion.div
                         className="flex items-center gap-1"
                         whileHover={{ scale: 1.1 }}
                       >
                         <Star size={14} />
                         <span>{project.stars}</span>
                       </motion.div>
-                      <motion.div 
+                      <motion.div
                         className="flex items-center gap-1"
                         whileHover={{ scale: 1.1 }}
                       >
@@ -201,7 +227,7 @@ const Projects: React.FC = () => {
                     </div>
                   </div>
 
-                  <motion.p 
+                  <motion.p
                     className="text-gray-300 mb-4 leading-relaxed"
                     whileHover={{ scale: 1.02 }}
                   >
@@ -229,7 +255,7 @@ const Projects: React.FC = () => {
               </div>
 
               {/* Glow effect */}
-              <motion.div 
+              <motion.div
                 className={`absolute -inset-1 bg-gradient-to-r ${project.gradient} rounded-2xl blur opacity-0 group-hover:opacity-30 transition-opacity duration-500 -z-10`}
                 whileHover={{ scale: 1.05 }}
               />
@@ -238,33 +264,33 @@ const Projects: React.FC = () => {
         </motion.div>
 
         {/* View More Projects Button */}
-<motion.div
-  variants={itemVariants}
-  initial="hidden"
-  animate={inView ? "visible" : "hidden"}
-  className="text-center mt-12"
->
-  <a
-    href="https://github.com/JeetDev2104" // Replace with your GitHub profile or repo link
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <motion.button
-      className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center gap-2 mx-auto"
-      whileHover={{ scale: 1.05, y: -5 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      View All Projects
-      <motion.div
-        whileHover={{ rotate: 360 }}
-        transition={{ duration: 0.6 }}
-      >
-        <ExternalLink size={16} />
-      </motion.div>
-    </motion.button>
-  </a>
-</motion.div>
-</div>
+        <motion.div
+          variants={itemVariants}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          className="text-center mt-12"
+        >
+          <a
+            href="https://github.com/JeetDev2104" // Replace with your GitHub profile or repo link
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <motion.button
+              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg hover:shadow-purple-500/25 transition-all duration-300 flex items-center gap-2 mx-auto"
+              whileHover={{ scale: 1.05, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              View All Projects
+              <motion.div
+                whileHover={{ rotate: 360 }}
+                transition={{ duration: 0.6 }}
+              >
+                <ExternalLink size={16} />
+              </motion.div>
+            </motion.button>
+          </a>
+        </motion.div>
+      </div>
     </section>
   );
 };

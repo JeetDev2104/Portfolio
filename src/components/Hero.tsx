@@ -182,7 +182,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 0.8 }}
               >
                 <motion.img
-                  src="https://lh3.google.com/u/0/d/1CeWs-u4WUztBzxASMsWNyV1j_q8E0s7f=w2836-h1416-iv1?auditContext=forDisplay"
+                  src="/src/assets/Generated Image (1).JPEG"
                   alt="Jeet Sarkar"
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                   whileHover={{
